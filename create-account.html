@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+  <script src="create account.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+    
+                <div class="col-sm-4">
+                    <hr />
+                    <a class="btn btn-warning" href="index.html">Main page</a>
+                    <hr />
+                    <h2>Create account</h2>
+                    <hr />
+    
+                    <div 
+                    class="alert alert-danger"
+                    id="login-eror-aler"
+                    style="display: none"
+                    ></div>
+    
+                    <div 
+                    class="alert alert-success"
+                    id="login-success-alert"
+                    style="display: none"
+                    ></div>
+    
+                    <form 
+                    action=""
+                    class="was-validated"
+                    onsubmit="onCreateAccount(event)"
+                    >
+                    <div class="form-group">
+                        <label for="user-full-name">Name:</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="user-full-name"
+                        required
+                        minlength="2"
+                        maxlength="30"
+                        />
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">
+                            bos qoymayin min 2 max 30 simvol ola biler
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-phone">Phone:</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="user-phone"
+                        required
+                        pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{4}"
+                        />    
+                        <div class="valid-feedback">True</div>
+                        <div class="invalid-feedback">
+                            the phone write not in good way,must be (000-000-0000) this way
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">User name</label>
+                        <input 
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        required
+                        minlength="2"
+                        maxlength="30"
+                        />
+                        <div class="valid-feedback">True</div>
+                        <div class="invalid-feedback">
+                            you can write min 2 and  max 30 length. 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <labael for="password">Password:</labael>
+                        <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        required
+                        minlength="2"
+                        maxlength="30"
+                        />
+                        <div class="valid-feedback">True</div>
+                        <div class="invalid-feedback">
+                            you can write min 2 and  max 30 length. 
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Create account</button>
+                    <hr />
+                    <span>Do you had an account?</span>
+                    <a href="login.html" class="btn btn-primary">Enter to account</a>
+                </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+</div
