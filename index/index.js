@@ -1,13 +1,13 @@
 var adminPageButton = document.getElementById('admin-page-button'); adminPageButton.addEventListener('click', function () {window.location.href = "admin.html";});
 
 var MyComputersButton = document.getElementById('my-computers-button');
-var myOrderButton = document.getElementById('my-orders-button');
+
 var shoppingButton = document.getElementById('shopping-button');
 var loginButton = document.getElementById('login-button');
 var logoutButton = document.getElementById('logout-button');
-MyComputersButton.addEventListener('click', function () {window.location.href = "computers.html"})
-shoppingButton.addEventListener('click', function () {
-    window.location.href = "shoping.html";
+MyComputersButton.addEventListener('click', function (onComputer) {window.location.href = "/Computer/computer.html"})
+shoppingButton.addEventListener('click', function (onShopping) {
+    window.location.href = "/shopping/shopping.html";
 });
 var userLoggedIn = false;
 
@@ -44,7 +44,7 @@ function showButtons() {
 }
 showButtons();
 function onLogin() {
-    window.location.href = "login.html"
+    window.location.href = "/Sign in project/index1.html"
 }
 function OnLogout() {
 
@@ -61,6 +61,18 @@ function OnLogout() {
     }, 500);
 
 }
+
+
+
+function onComputer() {
+    window.location.href ="/Computer/computer.html"
+}
+
+function onShopping() {
+    window.location.href = "/shopping/shopping.html"
+}
+
+
 
 var user = [];
 var categories = [];

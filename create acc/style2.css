@@ -70,7 +70,7 @@ margin-bottom: 26px;
 
 body {
   background-color: #328f8a;
-  background-image: url(./11.jpg);
+  background-image: url(/Images/11.jpg);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
