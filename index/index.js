@@ -1,7 +1,4 @@
-var adminPageButton = document.getElementById('admin-page-button'); adminPageButton.addEventListener('click', function () {window.location.href = "admin.html";});
-
 var MyComputersButton = document.getElementById('my-computers-button');
-
 var shoppingButton = document.getElementById('shopping-button');
 var loginButton = document.getElementById('login-button');
 var logoutButton = document.getElementById('logout-button');

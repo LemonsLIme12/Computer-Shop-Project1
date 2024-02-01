@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
 i{
-  color: rgb(254, 144, 1);
+  color: rgb(244, 217, 62);
   font-family: sans-serif;
   font-weight: 200;
   font-size: 48px;
@@ -51,7 +51,8 @@ button:hover{
     position: absolute;
     top: 0;
     left: 0;
-   
+    width: 100px;
+    height: 50px;
 }
 
 html, body {
@@ -59,7 +60,7 @@ html, body {
   background-color: beige;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  background-image: url(./back3.jpg);
+  background-image: url(./starsb.jpg);
 }
 html h1, body h1 {
   position: absolute;
@@ -68,7 +69,7 @@ html h1, body h1 {
   left: 180;
   margin-top: 25px;
   margin-bottom: 0;
-  color: rgb(255, 0, 0);
+  color: rgb(242, 255, 0);
 }
 
 
@@ -217,12 +218,12 @@ html h2, body h2 {
 
 .left-arrow {
   left: 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 54, 54);
 }
 
 .right-arrow {
   right: 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 54, 54);
 }
 
 #slide1:checked ~ .left-arrow[for=slide5], #slide1:checked ~ .right-arrow[for=slide2] {
